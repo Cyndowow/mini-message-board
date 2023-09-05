@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <a href="/"><button class="return-button">Take me back</button></a>
+    <h1 class="send-message-header">Send a message:</h1>
+
+    <form action="POST" action="/new" class="send-message-form">
+        <label for="username">Your name:</label>
+        <input type="text" name="messageUser" id="username" required>
+
+        <label for="user-message">Your Message:</label>
+        <input type="text" name="messageText" id="user-message" required>
+
+        <button id="submit-button">Send</button>
+    </form>
+</body>
+</html>
